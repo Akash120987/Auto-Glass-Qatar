@@ -1,2 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Glass Qatar | Car Glass Replacement & Repair</title>
 
- 
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,sans-serif;
+background:#050b16;
+color:white;
+line-height:1.6
+}
+header{
+background:#071522;
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10
+}
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#fff
+}
+.logo span{color:#ffd21f}
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold
+}
+.hero{
+min-height:600px;
+display:flex;
+align-items:center;
+padding:60px 8%;
+background:
+linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.25)),
+url("cover.png") center/cover no-repeat
+}
+.hero h1{
+font-size:55px;
+margin-bottom:15px
+}
+.hero h1 span{color:#ffd21f}
+.hero p{
+max-width:600px;
+font-size:19px;
+margin-bottom:25px
+}
+.btn{
+display:inline-block;
+background:#ffd21f;
+color:#071522;
+padding:14px 25px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none
+}
+section{padding:65px 7%}
+.title{
+text-align:center;
+font-size:36px;
+margin-bottom:35px
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px
+}
+.card{
+background:#101d2d;
+padding:30px;
+border-radius:15px;
+text-align:center;
+border:1px solid #20334a
+}
+.card .icon{font-size:45px}
+.card h3{
+margin:15px 0 8px;
+color:#ffd21f
+}
+.about{
+background:#0b1625;
+text-align:center
+}
+.about p{
+max-width:850px;
+margin:auto;
+font-size:18px
+}
+.gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px
+}
+.contact{
+background:#0b1f33;
+text-align:center
+}
+.contact h2{margin-bottom:20px}
+.contact p{font-size:18px;margin:8px}
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+background:#25d366;
+color:white;
+padding:14px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold
+}
+footer{
+background:#030811;
+text-align:center;
+padding:25px;
+color:#ccc
+}
+@media(max-width:700px){
+header{flex-direction:column;gap:12px}
+nav a{margin:0 7px}
+.hero{min-height:500px;padding:50px 7%}
+.hero h1{font-size:40px}
+.cards,.gallery{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">AUTO GLASS <span>QATAR</span></div>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h1>Auto Glass <span>Qatar</span></h1>
+<p>
+Professional car glass replacement, repair and fitting service in Qatar.
+Quality glass, skilled technicians and reliable service.
+</p>
+<a class="btn" href="tel:31094207">Call: 31094207</a>
+</div>
+</section>
+
+<section id="services">
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">🚘</div>
+<h3>Front Windshield</h3>
+<p>Professional front windshield replacement and fitting.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>Glass Repair</h3>
+<p>Repair service for suitable damaged car glass.</p>
+</div>
+
+<div class="card">
+<div class="icon">🛠️</div>
+<h3>Glass Replacement</h3>
+<p>Quality replacement with careful installation.</p>
+</div>
+
+<div class="card">
+<div class="icon">🪟</div>
+<h3>Window Glass</h3>
+<p>Side window and door glass replacement service.</p>
+</div>
+
+<div class="card">
+<div class="icon">✨</div>
+<h3>Glass Selling</h3>
+<p>Different types of automotive glass available.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏪</div>
+<h3>Glass Rack</h3>
+<p>Wide selection of car glass stored safely in our shop.</p>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2 class="title">About Auto Glass Qatar</h2>
+<p>
+Auto Glass Qatar provides professional automotive glass replacement,
+repair and fitting services. We focus on quality work, safe installation
+and customer satisfaction.
+</p>
+</section>
+
+<section id="gallery">
+<h2 class="title">Our Work</h2>
+
+<div class="gallery">
+<img src="cover.png" alt="Auto Glass Qatar">
+<img src="cover.png" alt="Glass Replacement">
+<img src="cover.png" alt="Glass Repair">
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="title">Contact Us</h2>
+
+<p>📞 <strong>31094207</strong></p>
+<p>📍 Industrial Area, Shop 1, Bldg 157, Street 25</p>
+<p>Opp. COMPUTER FAHES, Qatar</p>
+
+<a class="whatsapp"
+href="https://wa.me/97431094207">
+💬 Chat on WhatsApp
+</a>
+</section>
+
+<footer>
+<strong>AUTO GLASS QATAR</strong>
+<p>Your Safety, Our Priority</p>
+<p>© 2026 Auto Glass Qatar. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
