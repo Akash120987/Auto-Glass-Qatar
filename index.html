@@ -6,138 +6,179 @@
 <title>Auto Glass Qatar</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
 body{
-  font-family:Arial,sans-serif;
-  background:#07111f;
-  color:#fff;
-  line-height:1.6;
+font-family:Arial,sans-serif;
+background:#07111f;
+color:white
 }
+
 nav{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:#0b1b2d;
-  padding:15px 6%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  box-shadow:0 2px 12px #0008;
+position:sticky;
+top:0;
+z-index:1000;
+background:#050b14;
+padding:15px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #26384e
 }
+
 .logo{
-  font-size:22px;
-  font-weight:bold;
-  color:#ffd21c;
+font-size:24px;
+font-weight:bold
 }
+
+.logo span{color:#00aaff}
+
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:15px;
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:14px
 }
-.btn{
-  display:inline-block;
-  padding:12px 20px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:5px;
-}
-.call{background:#ffd21c;color:#111}
-.whatsapp{background:#18c96e;color:white}
 
 .hero{
-  min-height:75vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:40px 20px;
-  background:
-  linear-gradient(#06101dcc,#06101dcc),
-  url("cover.png") center/cover;
+min-height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 20px;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url("cover.png") center/cover no-repeat
 }
+
 .hero h1{
-  font-size:48px;
-  color:#ffd21c;
+font-size:48px;
+margin-bottom:15px
 }
+
+.hero h1 span{color:#00aaff}
+
 .hero p{
-  font-size:20px;
-  margin:10px 0 25px;
+font-size:20px;
+margin-bottom:25px
 }
 
-section{
-  padding:55px 6%;
-}
-h2{
-  text-align:center;
-  color:#ffd21c;
-  margin-bottom:30px;
-  font-size:32px;
+.btn{
+display:inline-block;
+background:#00aaff;
+color:white;
+padding:13px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
+section{padding:60px 7%}
+
+.title{
+text-align:center;
+font-size:32px;
+margin-bottom:35px
 }
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px
+}
+
 .card{
-  background:#10243a;
-  border-radius:14px;
-  overflow:hidden;
-  box-shadow:0 5px 20px #0006;
+background:#101d2d;
+border-radius:14px;
+overflow:hidden;
+border:1px solid #26384e;
+transition:.3s
 }
+
+.card:hover{transform:translateY(-5px)}
+
 .card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
+width:100%;
+height:210px;
+object-fit:cover
 }
-.card div{
-  padding:18px;
-}
+
+.card-content{padding:18px}
+
 .card h3{
-  color:#ffd21c;
-  margin-bottom:8px;
+color:#00aaff;
+margin-bottom:8px
+}
+
+.card p{
+color:#d5dbe3;
+line-height:1.5
 }
 
 .about{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  align-items:center;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:35px;
+align-items:center
 }
+
 .about img{
-  width:100%;
-  border-radius:15px;
+width:100%;
+border-radius:15px
+}
+
+.about p{
+color:#d5dbe3;
+line-height:1.8;
+font-size:17px
 }
 
 .contact{
-  text-align:center;
-  background:#0b1b2d;
-}
-footer{
-  text-align:center;
-  padding:25px;
-  background:#040a12;
-  color:#aaa;
+text-align:center;
+background:#0b1727
 }
 
-.float{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  background:#18c96e;
-  color:white;
-  padding:15px 18px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
+.contact p{
+margin:12px 0;
+font-size:17px
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:58px;
+height:58px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:28px;
+text-decoration:none;
+z-index:999
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#050b14;
+color:#aeb8c5
 }
 
 @media(max-width:700px){
-  nav{padding:12px 4%}
-  nav a{display:none}
-  .hero h1{font-size:35px}
-  .about{grid-template-columns:1fr}
+.hero h1{font-size:35px}
+
+nav{
+flex-direction:column;
+gap:12px
+}
+
+nav a{margin:0 7px}
+
+.about{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -145,141 +186,149 @@ footer{
 <body>
 
 <nav>
-  <div class="logo">AUTO GLASS QATAR</div>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <a class="btn call" href="tel:+97431094207">Call</a>
-</nav>
-
-<section class="hero" id="home">
-  <div>
-    <h1>AUTO GLASS QATAR</h1>
-    <p>Your Safety, Our Priority</p>
-    <p>Professional Car Glass Replacement & Repair</p>
-    <a class="btn call" href="tel:+97431094207">📞 Call Now</a>
-    <a class="btn whatsapp" href="https://wa.me/97431094207">💬 WhatsApp</a>
-  </div>
-</section>
-
-<section id="services">
-<h2>Our Services</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="glass-repair.png">
-<div><h3>Glass Repair</h3><p>Professional car glass repair service.</p></div>
-</div>
-
-<div class="card">
-<img src="glass-replacement.png">
-<div><h3>Windshield Replacement</h3><p>Front windshield replacement for cars.</p></div>
-</div>
-
-<div class="card">
-<img src="window-glass.png">
-<div><h3>Window Glass</h3><p>Car side and window glass solutions.</p></div>
-</div>
-
-<div class="card">
-<img src="tint-film.png">
-<div><h3>Tint Film</h3><p>Professional window tint film installation.</p></div>
-</div>
-
-<div class="card">
-<img src="glass-selling.png">
-<div><h3>Glass Selling</h3><p>Quality automotive glass available.</p></div>
-</div>
-
-<div class="card">
-<img src="glass-rack.png">
-<div><h3>Glass Stock</h3><p>Wide range of automotive glass in stock.</p></div>
-</div>
-
-</div>
-</section>
-
-<section id="gallery">
-<h2>Our Gallery</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="glass-repair.png">
-<div><h3>Glass Repair</h3></div>
-</div>
-
-<div class="card">
-<img src="tint-film.png">
-<div><h3>Tint Film Installation</h3></div>
-</div>
-
-<div class="card">
-<img src="glass-replacement.png">
-<div><h3>Glass Replacement</h3></div>
-</div>
-
-<div class="card">
-<img src="glass-selling.png">
-<div><h3>Glass Selling</h3></div>
-</div>
-
-<div class="card">
-<img src="glass-rack.png">
-<div><h3>Glass Rack / Stock</h3></div>
-</div>
-
-<div class="card">
-<img src="shop.png">
-<div><h3>Our Shop</h3></div>
-</div>
-
-</div>
-</section>
-
-<section id="about">
-<h2>About Auto Glass Qatar</h2>
-
-<div class="about">
-<img src="shop.png">
+<div class="logo">Auto Glass <span>Qatar</span></div>
 
 <div>
-<h3>Professional Auto Glass Service</h3>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+<div>
+<h1>Auto Glass <span>Qatar</span></h1>
+<p>Professional Car Glass Replacement, Repair & Tinting</p>
+<a class="btn" href="#contact">Contact Us</a>
+</div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<!-- NEW PHOTO 1 -->
+<div class="card">
+<img src="1074fb37-3a4f-4dfb-b422-e86f27507a75.png">
+<div class="card-content">
+<h3>Glass Repair</h3>
+<p>Professional car glass repair service.</p>
+</div>
+</div>
+
+
+<!-- NEW PHOTO 2 -->
+<div class="card">
+<img src="7b3c98c5-f6a6-4c56-82be-a704fcaaf0e1.png">
+<div class="card-content">
+<h3>Glass Replacement</h3>
+<p>Front windshield and car glass replacement.</p>
+</div>
+</div>
+
+
+<!-- NEW PHOTO 3 -->
+<div class="card">
+<img src="d77b558c-3210-4845-b8db-be69d054a823.png">
+<div class="card-content">
+<h3>Window Glass</h3>
+<p>Car door and window glass services.</p>
+</div>
+</div>
+
+
+<!-- NEW PHOTO 4 -->
+<div class="card">
+<img src="unnamed.jpg">
+<div class="card-content">
+<h3>Window Tint</h3>
+<p>Quality tint film installation for vehicles.</p>
+</div>
+</div>
+
+
+<!-- NEW PHOTO 5 -->
+<div class="card">
+<img src="unnamed (1).jpg">
+<div class="card-content">
+<h3>Glass Sales</h3>
+<p>Different types of automotive glass available.</p>
+</div>
+</div>
+
+
+<!-- NEW PHOTO 6 -->
+<div class="card">
+<img src="unnamed (2).jpg">
+<div class="card-content">
+<h3>Glass Stock</h3>
+<p>Large selection of automotive glass in stock.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+<h2 class="title">About Auto Glass Qatar</h2>
+
+<div class="about">
+
+<img src="shop.png" alt="Auto Glass Qatar">
+
+<div>
 <p>
-Auto Glass Qatar provides professional automotive glass repair,
-replacement, tint film installation and glass sales in Qatar.
+Auto Glass Qatar provides professional automotive glass
+replacement, repair, window glass and tinting services in Qatar.
 </p>
+
 <br>
-<p><strong>📍 Location:</strong><br>
-Industrial Area, Shop 1, Bldg 157, Street 25,
-Opp. COMPUTER FAHES, Qatar</p>
+
+<p>
+Quality work, reliable service and customer satisfaction.
+</p>
 </div>
+
 </div>
 </section>
 
+
+<!-- CONTACT -->
 <section id="contact" class="contact">
-<h2>Contact Us</h2>
 
-<p>📞 <strong>31094207</strong></p>
-<p>💬 WhatsApp: +974 31094207</p>
-<p>📍 Industrial Area, Street 25, Qatar</p>
+<h2 class="title">Contact Us</h2>
+
+<p>📞 Phone / WhatsApp: <strong>31094207</strong></p>
+
+<p>📍 Industrial Area, Shop 1, Bldg 157, Street 25</p>
+
+<p>Opp. COMPUTER FAHES, Qatar</p>
 
 <br>
 
-<a class="btn call" href="tel:+97431094207">📞 Call Auto Glass Qatar</a>
-<a class="btn whatsapp" href="https://wa.me/97431094207">💬 WhatsApp Us</a>
+<a class="btn" href="https://wa.me/97431094207">
+WhatsApp Us
+</a>
+
 </section>
+
+
+<a class="whatsapp" href="https://wa.me/97431094207">☎</a>
+
 
 <footer>
-© 2026 Auto Glass Qatar — Your Safety, Our Priority.
+© 2026 Auto Glass Qatar. All Rights Reserved.
 </footer>
-
-<a class="float" href="https://wa.me/97431094207">💬 WhatsApp</a>
 
 </body>
 </html>
